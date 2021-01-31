@@ -77,41 +77,6 @@ main {
   margin-top: -1%;
   margin-bottom: 1%;
 }
-.circle1,
-.circle2 {
-  background: white;
-  background: -webkit-linear-gradient(
-    left top,
-    rgba(255, 255, 255, 0.8),
-    rgba(255, 255, 255, 0.3)
-  );
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.8),
-    rgba(255, 255, 255, 0.3)
-  );
-  height: 20rem;
-  width: 20rem;
-  position: absolute;
-  border-radius: 50%;
-}
-
-.circle1 {
-  top: 5%;
-  right: 15%;
-  -webkit-animation: animate 8s linear infinite;
-          animation: animate 8s linear infinite;
-	-webkit-animation-delay: calc(-1s * var(--i));
-	        animation-delay: calc(-1s * var(--i));
-}
-.circle2 {
-  bottom: 5%;
-  left: 10%;
-  -webkit-animation: animate 10s linear infinite;
-          animation: animate 10s linear infinite;
-	-webkit-animation-delay: calc(-1s * var(--i));
-	        animation-delay: calc(-1s * var(--i));
-}
 
 @-webkit-keyframes animate
 {
