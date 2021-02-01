@@ -12,13 +12,20 @@
     />
     <link rel="stylesheet" href="./style.css" />
     <script src="./js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <div id="particles-js"></div>
-    <main>
-      <section class="glass" data-tilt data-tilt-max="2" data-tilt-speed="100" data-tilt-perspective="3000" data-tilt-full-page-listening>
-        <div class="dashboard">
-          <div class="user">
+    <main id="colori">
+      <section class="glass" id="vetro" data-tilt data-tilt-max="2" data-tilt-speed="100" data-tilt-perspective="3000" data-tilt-full-page-listening>
+        <div class="dashboard" id="dashboard">
+          <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" onchange="CambiaColori(this)"/>
+                <div class="slider round"></div>
+            </label>
+          </div>
+          <div class="user">            
             <button onclick="RefreshPagina('main')">
             <img src="./images/logo.png" width="200" height="200" alt="" data-tilt data-tilt-full-page-listening data-tilt-glare data-tilt-max-glare="0.8"/>
           </button>
@@ -28,30 +35,30 @@
           <div class="links">
             <div class="link" id="riflesso">
               <button onclick="RefreshPagina('chisiamo')">
-              <img src="./images/info.svg" class="iconemenu" alt="" />
+              <img src="./images/info.svg" class="iconemenu" id="iconemenu" alt="" />
               <h2 id="testomenu">CHI SIAMO</h2>
               </button>
             </div>
             <div class="link" id="riflesso">
-              <img src="./images/twitch.svg" class="iconemenu" alt="" />
+              <img src="./images/twitch.svg" class="iconemenu" id="iconemenu" alt="" />
               <button onclick="RefreshPagina('twitch')">
               <h2 id="testomenu">TWITCH</h2>
             </button>
             </div>            
             <div class="link" id="riflesso">
               <button onclick="RefreshPagina('igram')">
-              <img src="./images/instagram.svg" class="iconemenu" alt="" />
+              <img src="./images/instagram.svg" class="iconemenu" id="iconemenu" alt="" />
               <h2 id="testomenu">INSTAGRAM</h2>
             </button>
             </div>
             <div class="link" id="riflesso">
-              <img src="./images/forum.svg" class="iconemenu" alt="" />
+              <img src="./images/forum.svg" class="iconemenu" id="iconemenu" alt="" />
               <button onclick="RefreshPagina('forum')">
               <h2 id="testomenu">FORUM</h2>
             </button>
             </div>
           </div>
-          <div class="pro">
+          <div class="pro" id="pro">
             <h2 data-tilt data-tilt>Entra adesso su Discord!</h2>
             <a href="https://discord.com/invite/6cQWVP4" target="_blank">
             <img src="./images/discord.svg" width="149" height="149" alt="" data-tilt data-tilt-glare data-tilt-max-glare="0.8"/></a>
